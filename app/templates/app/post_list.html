@@ -5,6 +5,13 @@
 	<body>
 		<div>
 			<h1><a href="/">Test App</a></h1>
+		</div>
+		<div>{% for post in posts %}
+		<p>published: {{posy.published_date }} </p>
+		<h2><a href="">{{ post.title }}</a></h2>
+		<p>{{ post.text|linebreaksbr }}</p>
+		{% endfor %}</div>
 		<p> Hi! </p>
+		
 	</body>
 </html>
